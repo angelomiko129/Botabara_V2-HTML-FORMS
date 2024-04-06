@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiksJolli</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="speaker-form-header">
+        <div class="flags">
+            <span>BURGER. SHOP.</span>
+        </div>
+        <img src="logo.png" alt="">
+        <h2><span>Welcome to</span> MiksJolli!</h1>
+            <p><span><em>Want to be happy? Fill out this form and buy dozens of burger from our resto.</em></span></p>
+
+            <ul><a href="/index.html"></a></ul>
+    </header>
+
+    <form action="" method="get" class="speaker-form">
+        <div class="form-row">
+            <label for="full-name">Name: </label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter full name">
+        </div>
+        <div class="form-row">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="miksjolli@example.com">
+        </div>
+
+        <div class="form-row">
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age" placeholder="15+" max="100" min="15">
+        </div>
+
+        <div id="dropdown">
+            <button class="dropdown-toggle">
+                <span style="color: #fff;">Menu</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Beef Burger</a></li>
+                <li class="menu-item"><a href="#">Cheese Burger</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Vegetarian Burger</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Specials</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="">Big Mac/with Coke</a></li>
+                        <li class="submenu-item"><a href="">Big Mac/with Float</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="dropdown">
+            <button class="dropdown-toggle">
+                <span style="color: #fff;">Payment Option (MOP)</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+
+            <ul class="menu">
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Cash</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="">Full Payment</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Credit/Debit</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="">Visa</a></li>
+                        <li class="submenu-item"><a href="">Union MasterCard</a></li>
+                        <li class="submenu-item"><a href="">MetroBank MasterCard</a></li>
+                        <li class="submenu-item"><a href="">BPI Cashback Card</a></li>
+                        <li class="submenu-item"><a href="">Union</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">E-Wallet</a></li>
+                <li class="menu-item"><a href="#">JolliPay</a></li>
+            </ul>
+        </div>
+
+        <fieldset class='legacy-form-row clearfix'>
+            <legend>Delivery:</legend>
+
+            <input id='delivery-1' name='talk-type' type='radio' value='dine-in' />
+            <label for='delivery-1' class='radio-label'>Dine-In</label>
+            <input id='delivery-2' name='talk-type' type='radio' value='take-out' />
+            <label for='delivery-2' class='radio-label'>Take-Out</label>
+        </fieldset>
+
+        <div class="form-row">
+            <label for="comment">Comments:</label>
+            <textarea name="comment" id="comment" placeholder="Place your comment here"></textarea>
+        </div>
+        
+        <button type="submit" class="cancel">Cancel</button>
+        <button type="submit" class="order">Place Order</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
