@@ -184,9 +184,10 @@ a {
     border-radius: 6px;
     max-width: 220px;
     width: 100%; 
-    margin: 10px auto 30px;
+    margin: 10px 10px 30px;
     background-color: #feae28;
     position: relative;
+    float: left;
 }
 
 .dropdown-toggle,
@@ -294,6 +295,12 @@ i {
 
 input[type='radio'] {
     accent-color: #feae28;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 @media screen and (min-width: 700px) {
